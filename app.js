@@ -20,6 +20,7 @@ const start = async () => {
     const salt = await bcrypt.genSalt()
     const password = await bcrypt.hash('', salt)
     console.log(salt, password)
+    console.log('hi')
 
     // try {
     //     await connectDB(process.env.connectionURL)
